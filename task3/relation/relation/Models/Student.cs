@@ -8,11 +8,11 @@ namespace relation.Models
     public class Student
     {
         public int Id { get; set; }
-        public int GroupID { get; set; }
+        public int GroupId { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
         public int Age { get; set; }
         public int Grade { get; set; }
-        public Group group { get; set; }
+        public Group Group { get; set; }
     }
 }

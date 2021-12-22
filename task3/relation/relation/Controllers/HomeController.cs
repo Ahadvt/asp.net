@@ -19,7 +19,8 @@ namespace relation.Controllers
         }
         public ActionResult Index()
         {
-            return View();
+            List<Group> groups = _context.Groups.Include(b=>b.students).ToList();
+            return View(groups);
         }
 
         public ActionResult Details(int id)
