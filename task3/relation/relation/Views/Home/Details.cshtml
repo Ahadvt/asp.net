@@ -1,0 +1,27 @@
+﻿@using relation.Models
+
+@model Group
+
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="btn-group">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="defaultDropdown" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+        @Model.Name
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="defaultDropdown">
+
+        @foreach (Student student in Model.students)
+        {
+            <li><a class="dropdown-item" href="#">student.Name</a></li>
+        }
+
+    </ul>
+</div>
+
+
+
+
+
